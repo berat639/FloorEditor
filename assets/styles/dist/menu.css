@@ -1,0 +1,181 @@
+li.c-dropdown {
+  position: relative;
+}
+li.c-dropdown a.c-dropdown-toggle {
+  white-space: nowrap;
+}
+li.c-dropdown div.c-dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 78px;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0;
+  margin: 3px 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+li.c-dropdown div.c-dropdown-menu ul {
+  list-style: none;
+}
+
+main nav {
+  height: 100%;
+  width: 75px;
+  background-color: var(--MIDNIGHTBLUE);
+}
+main nav ul.menu > li {
+  padding: 10px;
+  border-bottom: 1px solid var(--CLOUDS);
+}
+main nav ul.menu > li:last-child {
+  border-bottom: 0;
+}
+main nav ul.menu > li > a {
+  display: block;
+  text-align: center;
+  color: var(--Faded);
+}
+main nav ul.menu > li > a:hover {
+  color: var(--CLOUDS);
+}
+main nav ul.menu > li > a i {
+  font-size: 38px;
+}
+main nav ul.menu > li > a p {
+  margin-top: 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+main nav ul.menu > li div {
+  width: 305px;
+}
+main nav ul.menu > li div div.header {
+  background-color: var(--MIDNIGHTBLUE);
+  color: var(--Faded);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+main nav ul.menu > li div div.header h4 {
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+main nav ul.menu > li div div.header i {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+main nav ul.menu > li div div.header i:hover {
+  color: var(--CLOUDS);
+  cursor: pointer;
+}
+main nav ul.menu > li div div.image-viewer {
+  margin-bottom: 1px;
+}
+main nav ul.menu > li div div.image-viewer a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+main nav ul.menu > li div div.image-viewer a img {
+  width: 100%;
+  height: auto;
+}
+main nav ul.menu > li div div.image-viewer a .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main nav ul.menu > li div div.image-viewer a .overlay i {
+  color: var(--Faded);
+  font-size: 40px;
+}
+main nav ul.menu > li div div.image-viewer a:hover .overlay {
+  opacity: 1;
+}
+main nav ul.menu > li div div.footer {
+  background-color: var(--MIDNIGHTBLUE);
+  color: var(--Faded);
+  text-align: center;
+  padding: 10px;
+  margin-top: 1px;
+}
+main nav ul.menu > li div div.footer p {
+  font-size: 11px;
+  margin-bottom: 0;
+}
+main nav ul.menu > li div ul li {
+  border-bottom: 1px solid var(--CLOUDS);
+}
+main nav ul.menu > li div ul li:last-child {
+  border-bottom: 0;
+}
+main nav ul.menu > li div ul li > span {
+  display: flex;
+  text-decoration: none;
+  background-color: var(--MIDNIGHTBLUE);
+}
+main nav ul.menu > li div ul li > span:hover {
+  color: var(--CLOUDS);
+}
+main nav ul.menu > li div ul li > span a {
+  z-index: 10;
+}
+main nav ul.menu > li div ul li > span a img {
+  height: 50px;
+  width: auto;
+}
+main nav ul.menu > li div ul li > span a img:hover {
+  transform: scale(1.2);
+}
+main nav ul.menu > li div ul li > span input {
+  position: absolute;
+  visibility: collapse;
+}
+main nav ul.menu > li div ul li > span input:checked + label {
+  background-color: var(--Faded);
+  color: var(--MIDNIGHTBLUE);
+}
+main nav ul.menu > li div ul li > span input:checked + label + i {
+  display: flex;
+}
+main nav ul.menu > li div ul li > span label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  flex: 1;
+  white-space: nowrap;
+  padding: 0 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: var(--Faded);
+}
+main nav ul.menu > li div ul li > span i {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  background-color: var(--Faded);
+  color: var(--MIDNIGHTBLUE);
+}
